@@ -1,30 +1,21 @@
-# Kubernetes Examples
+# FailOver With Kubernets
 
-This directory contains a number of examples of how to run real applications
-with Kubernetes.
+First tool in this exercise we need to install jmeter to identify our website to test the FailOver with the Load Testing 
+### Getting Started
+!["Structure"](/imgs/1.jpg)
+#### 1.  Opening jmeter and create a template where we record 
+!["Structure"](/imgs/2.jpg)
+#### 2.  Then Started Adding the Tree results view (Thread Group > add > Listener > View Results Tree), http Request (Thread Group > add > sampler > HTTP request) and Adding the path
+!["Structure"](/imgs/2.3.jpg)
 
-Refer to the [Kubernetes documentation] for how to execute the tutorials.
+#### 3.  Create number of thread or users and the period of time
+!["Structure"](/imgs/3.jpg)
+#### 4.  Running and seeing the results expected output 
+!["Structure"](/imgs/4.jpg)
 
-### Maintained Examples
+### Integrants: 
+#### Josue Singaña, Christian Soledispa, Erick Andrade, Jhosef Rea, Johan Quinatoa 
 
-Maintained Examples are expected to be updated with every Kubernetes release, to
-use the latest and greatest features, current guidelines and best practices,
-and to refresh command syntax, output, changed prerequisites, as needed.
 
-|Name | Description | Notable Features Used | Complexity Level|
-------------- | ------------- | ------------ | ------------ |
-|[Guestbook](guestbook/) | PHP app with Redis | Deployment, Service | Beginner |
-|[Guestbook-Go](guestbook-go/) | Go app with Redis | Deployment, Service | Beginner |
-|[WordPress](mysql-wordpress-pd/) | WordPress with MySQL | Deployment, Persistent Volume with Claim | Beginner|
-|[Cassandra](cassandra/) | Cloud Native Cassandra | Daemon Set, Stateful Set, Replication Controller | Intermediate
 
-> Note: Please add examples that are maintained to the list above.
 
-See [Example Guidelines](guidelines.md) for a description of what goes
-in this directory, and what examples should contain.
-
-[Kubernetes documentation]: https://kubernetes.io/docs/tutorials/
-
-### Contributing
-
-Please see [CONTRIBUTING.md](CONTRIBUTING.md) for instructions on how to contribute.
